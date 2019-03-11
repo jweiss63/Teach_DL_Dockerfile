@@ -18,7 +18,7 @@ RUN apt update && apt -y upgrade
 # RUN ./nvbuild.sh --python2
 # RUN ./nvbuild.sh --python3
 RUN git clone https://github.com/NVIDIA/DALI
-RUN git clone https://github.com/jweiss63/ngctf
+RUN git clone https://github.com/jweiss63/notebooks
 # Reset default working directory
 WORKDIR /workspace
 CMD jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token='' --NotebookApp.password=''
