@@ -16,7 +16,7 @@ RUN apt update && apt -y upgrade
 # RUN ./nvbuild.sh --python2
 # RUN ./nvbuild.sh --python3
 RUN cd /workspace && git clone https://github.com/NVIDIA/DALI
-RUN cd /workspace && git clone https://github.com/NVIDIA/DeepLearningExamples/tree/master/TensorFlow
+RUN cd /workspace && git clone https://github.com/NVIDIA/DeepLearningExamples
 # RUN git clone https://github.com/jweiss63/notebooks
 # Reset default working directory
 WORKDIR /
